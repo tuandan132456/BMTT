@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#CCE1F3">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back"/>
+
+    <TextView
+        android:id="@+id/logoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="Admin"
+        android:textColor="#fff"
+        android:textSize="45sp"
+        android:transitionName="logo_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="65dp" />
+
+    <Button
+
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/cuttombutton"
+        android:text="auditing"
+        android:textColor="#a1c9f1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#fff"
+        android:fontFamily="@font/bungee"/>
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/cuttombutton"
+        android:text="create account"
+        android:textColor="#a1c9f1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#fff"
+        android:fontFamily="@font/bungee" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="40dp"
+    app:cardElevation="6dp"
+    android:layout_margin="10dp"
+    android:padding="7dp"
+    android:background="#CCE1F3">
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/avatarnon2"
+            android:layout_marginLeft="0dp"/>
+
+        <TextView
+            android:id="@+id/txtProfileUsername"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/avatar"
+            android:fontFamily="@font/bungee"
+            android:includeFontPadding="false"
+            android:text="Nguyễn Đăng Tuấn Đan"
+            android:textSize="16dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="#a1c9f1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="283dp"
+            android:background="@drawable/cuttombutton"
+            android:elevation="8dp"
+            android:text="Delete"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:backgroundTint="#EE2C2C" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
