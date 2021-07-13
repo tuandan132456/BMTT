@@ -1,0 +1,1 @@
+Muốn làm thì commit lại, pull về trước rồi hãy làm
