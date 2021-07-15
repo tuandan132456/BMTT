@@ -11,11 +11,11 @@ public class UserData {
 
     }
 
-    public UserData(String fullname, String username, String password,String phone, String dateNow){
+    public UserData(String fullname,  String password,String phone,String dateNow ,String username){
         this.fullname = fullname;
-        this.username = username;
         this.password = password;
         this.phone = phone;
         this.dateNow = dateNow;
+        this.username = username;
     }
 }

@@ -27,13 +27,15 @@ public class CreateAccount extends AppCompatActivity {
     TextInputLayout fullname,username,phone,pass,confirmpass;
     String FullName,UserName,PhoneNo,PassWord,ConfirmPassword,DateTime;
     ImageView back;
-    DatabaseReference fAuth;
+    DatabaseReference fAuth,getfAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
         back = findViewById(R.id.btnBackAdmin);
 
+        //getfAuth = FirebaseDatabase.getInstance().getReference("LOG");
+        //getfAuth.setValue("day la log");
         //tao data
         fAuth = FirebaseDatabase.getInstance().getReference("User");
 
@@ -88,9 +90,9 @@ public class CreateAccount extends AppCompatActivity {
 
         DateTime  = df.format(date);
 
-        UserData user = new UserData(FullName,UserName,PassWord,PhoneNo,DateTime);
+        UserData userData = new UserData(FullName,PassWord,PhoneNo,DateTime,UserName);
 
-        fAuth.child(UserName).setValue(user);
+        fAuth.child(UserName).setValue(userData);
 
         Toast.makeText(CreateAccount.this,"Create Success",Toast.LENGTH_LONG).show();
 
