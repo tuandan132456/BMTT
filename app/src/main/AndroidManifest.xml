@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BaDiem">
-        <activity android:name=".LoginAdmin"></activity>
+        <activity android:name=".M1"></activity>
+        <activity android:name=".Menu" />
+        <activity android:name=".LoginAdmin" />
         <activity android:name=".CreateAccount" />
         <activity android:name=".Test" />
         <activity android:name=".Profile" />

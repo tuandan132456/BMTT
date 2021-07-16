@@ -20,8 +20,8 @@
 
         <ImageView
             android:id="@+id/avatar"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_centerVertical="true"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
@@ -45,18 +45,19 @@
             android:includeFontPadding="false"
             android:text="deathcoi"
             android:textColor="#a1c9f1"
-            android:textSize="23dp"
+            android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/avatar"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+        <ImageView
+            android:id="@+id/btndelete"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
-            android:layout_marginStart="333dp"
-            android:layout_marginLeft="333dp"
+            android:layout_marginStart="285dp"
+            android:layout_marginLeft="285dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="2dp"
             android:background="@drawable/imgdelete"
@@ -66,12 +67,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Switch
-            android:id="@+id/btnDelete2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:id="@+id/btnswitch"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
-            android:layout_marginStart="237dp"
-            android:layout_marginLeft="237dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginLeft="190dp"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
             android:background="@drawable/cuttombutton"
@@ -81,15 +82,16 @@
             app:backgroundTint="#a1c9f1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.461" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+        <ImageView
+            android:id="@+id/btnedit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
-            android:layout_marginStart="288dp"
-            android:layout_marginLeft="288dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginLeft="240dp"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
             android:background="@drawable/imgedit"
