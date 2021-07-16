@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "851586560989",
+    "project_id": "badiem-288d4",
+    "storage_bucket": "badiem-288d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851586560989:android:43d1cfe6e8ba3949c87c34",
+        "android_client_info": {
+          "package_name": "com.example.badiem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851586560989-7kjqe2osee95tl4m9k5gd02chac3re5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArEtZMopJ2ltkOKAT-DBCoCw9l46W_92k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851586560989-7kjqe2osee95tl4m9k5gd02chac3re5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

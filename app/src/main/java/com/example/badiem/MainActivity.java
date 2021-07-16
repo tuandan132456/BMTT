@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnTest;
+    Button btnTest,btnAdminScreen,btnUserScreen;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +24,24 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent it = new Intent(MainActivity.this, Test.class);
                 startActivity(it);
+            }
+        });
+
+        btnAdminScreen = findViewById(R.id.btnAdminScreen);
+        btnAdminScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent admin = new Intent(MainActivity.this,Admin.class);
+                startActivity(admin);
+            }
+        });
+
+        btnUserScreen = findViewById(R.id.btnUserScreen);
+        btnUserScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent user = new Intent(MainActivity.this,User.class);
+                startActivity(user);
             }
         });
     }
