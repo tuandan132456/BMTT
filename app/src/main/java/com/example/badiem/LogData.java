@@ -21,6 +21,5 @@ public class LogData {
         this.action = action;
         this.details = details;
         this.dateNow = dateNow;
-
     }
 }
