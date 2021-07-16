@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BaDiem">
+<<<<<<< HEAD
         <activity android:name=".testdsa"></activity>
+=======
+        <activity android:name=".M1"></activity>
+        <activity android:name=".Menu" />
+>>>>>>> 57e386dc1f1336ff41d94088da0d92da1da72651
         <activity android:name=".LoginAdmin" />
         <activity android:name=".CreateAccount" />
         <activity android:name=".Test" />
