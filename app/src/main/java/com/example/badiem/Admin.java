@@ -9,7 +9,9 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 public class Admin extends AppCompatActivity {
-    Button btnAuditing, btnCreateAcc;
+    Button btnListUser, btnCreateAcc, btnAuditing;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +19,18 @@ public class Admin extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_admin);
-        btnAuditing = findViewById(R.id.btnAuditing);
+        btnListUser = findViewById(R.id.btnList);
         btnCreateAcc = findViewById(R.id.btnCreateAccount);
+        btnAuditing = findViewById(R.id.btnAuditing);
+
+        btnAuditing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(MainActivity.isAuditing)
+                    MainActivity.isAuditing = false;
+                else MainActivity.isAuditing = true;
+            }
+        });
 
         btnCreateAcc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,7 +40,7 @@ public class Admin extends AppCompatActivity {
             }
         });
 
-        btnAuditing.setOnClickListener(new View.OnClickListener() {
+        btnListUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Admin.this,List.class);

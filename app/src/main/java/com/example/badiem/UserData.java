@@ -7,9 +7,11 @@ import java.util.Date;
 public class UserData {
     public String fullname,username,password,phone,dateNow;
 
-    public UserData(){
-
+    public String getUsername() {
+        return username;
     }
+
+
 
     public UserData(String fullname,  String password,String phone,String dateNow ,String username){
         this.fullname = fullname;
