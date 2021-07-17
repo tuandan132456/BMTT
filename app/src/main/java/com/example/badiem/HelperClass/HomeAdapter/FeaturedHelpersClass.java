@@ -1,16 +1,21 @@
 package com.example.badiem.HelperClass.HomeAdapter;
 
+import android.widget.Switch;
+
 public class FeaturedHelpersClass {
 
-    int image;
-    String  username, action, details, dateNow;
+    int image, image1, image2;
+    String  username;
+    Switch aSwitch;
 
-    public FeaturedHelpersClass(int image, String username, String action, String details, String dateNow) {
+    public FeaturedHelpersClass(int image, String username, int image1, int image2, Switch aSwitch) {
         this.image = image;
         this.username = username;
-        this.action = action;
-        this.details = details;
-        this.dateNow = dateNow;
+        this.image1 = image1;
+        this.image2 = image2;
+        this.aSwitch = aSwitch;
+
+
     }
 
     public int getImage() {
@@ -21,15 +26,13 @@ public class FeaturedHelpersClass {
         return username;
     }
 
-    public String getAction() {
-        return action;
+    public int getImage1() {
+        return image1;
     }
 
-    public String getDetails() {
-        return details;
+    public int getImage2() {
+        return image2;
     }
 
-    public String getDateNow() {
-        return dateNow;
-    }
+    public boolean getaSwitch(){ return false;}
 }
