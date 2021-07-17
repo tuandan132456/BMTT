@@ -46,6 +46,7 @@ public class CreateAccount extends AppCompatActivity {
 
 
 
+
         //getfAuth = FirebaseDatabase.getInstance().getReference("LOG");
         //getfAuth.setValue("day la log");
         //tao data
@@ -93,12 +94,13 @@ public class CreateAccount extends AppCompatActivity {
     }
     public void CreateAccount(){
 
-        //// TODO: 17/07/2021 Làm sao để đẩy cái pass encrypted lên??
+        //// TODO: 17/07/2021 Làm sao để đẩy cái pass encrypted lên?? Done
         FullName = fullname.getEditText().getText().toString().trim();
         UserName = username.getEditText().getText().toString().trim();
         PhoneNo = phone.getEditText().getText().toString().trim();
-        PassWord = pass.getEditText().getText().toString().trim();
+        PassWord = hash.getSHA512(pass.getEditText().getText().toString().trim());
         Date date = new Date();
+
 
         DateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 
