@@ -8,9 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
 public class Test extends AppCompatActivity {
 
     EditText txt, txtpss;
@@ -23,7 +20,7 @@ public class Test extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-        Crypto cr = new Crypto();
+        Hash cr = new Hash();
         binding();
 
         btnResult.setOnClickListener(new View.OnClickListener() {

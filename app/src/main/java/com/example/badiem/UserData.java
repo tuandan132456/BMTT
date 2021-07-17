@@ -5,12 +5,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class UserData {
-    public String fullname,username,password,phone,dateNow;
+    public String fullname,username,password,phone,dateNow,infoEncrypted;
 
     public String getUsername() {
         return username;
     }
-
 
 
     public UserData(String fullname,  String password,String phone,String dateNow ,String username){

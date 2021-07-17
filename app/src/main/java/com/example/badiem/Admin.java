@@ -7,12 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class Admin extends AppCompatActivity {
     Button btnListUser, btnCreateAcc, btnAuditing;
-
-
-
+    ImageView imv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,13 +21,21 @@ public class Admin extends AppCompatActivity {
         btnListUser = findViewById(R.id.btnList);
         btnCreateAcc = findViewById(R.id.btnCreateAccount);
         btnAuditing = findViewById(R.id.btnAuditing);
+        imv = findViewById(R.id.imvRec);
+
 
         btnAuditing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(MainActivity.isAuditing)
+                if(MainActivity.isAuditing){
                     MainActivity.isAuditing = false;
-                else MainActivity.isAuditing = true;
+                    imv.setVisibility(View.INVISIBLE);
+                }
+                else {
+                    MainActivity.isAuditing = true;
+                    imv.setVisibility(View.VISIBLE);
+                }
+
             }
         });
 
