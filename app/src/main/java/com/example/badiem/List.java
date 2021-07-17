@@ -28,6 +28,7 @@ public class List extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_list);
 
+
         featuredRecycler = findViewById(R.id.featred_recyclerrr);
         featuredRecycler();
         aSwitch = findViewById(R.id.btnswitch);
@@ -46,5 +47,7 @@ public class List extends AppCompatActivity {
 
         adapter = new ViewCard(featuredLocations);
         featuredRecycler.setAdapter(adapter);
+
+
     }
 }
