@@ -12,6 +12,10 @@ public class UserData {
     }
 
 
+    public UserData(){
+
+    }
+
     public UserData(String fullname,  String password,String phone,String dateNow ,String username){
         this.fullname = fullname;
         this.password = password;
