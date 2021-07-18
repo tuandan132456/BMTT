@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mission1"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mission 2"
+            android:fontFamily="@font/bungee"
+            android:textSize="45dp"
+            android:layout_gravity="center"
+            android:textColor="#a1c9f1"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="0dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp">
+
+            <TextView
+                android:id="@+id/socauhoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Qestion 1"
+                android:fontFamily="@font/bentham"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/cuttum1"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+            <ImageView
+                android:id="@+id/imgmission2.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mission2"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Có bao nhiêu hình vuông trong bức ảnh này?"
+            android:layout_alignBottom="@+id/imgmission2.1"
+            android:layout_marginTop="-55dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"/>
+
+        <RadioButton
+            android:id="@+id/dapan1"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/cuttum1"
+            android:gravity="center"
+            android:paddingStart="-25dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="A. 20"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingLeft="-25dp" />
+        <RadioButton
+            android:id="@+id/dapan2"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="-25dp"
+            android:paddingTop="15dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:text="B. 50"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:background="@drawable/cuttum1"
+            android:layout_marginTop="-51dp"
+            android:layout_gravity="right"
+            android:paddingLeft="-25dp" />
+        <RadioButton
+            android:id="@+id/dapan3"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingStart="-25dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:text="C. 35"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:background="@drawable/cuttum1"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="-20dp" />
+        <RadioButton
+            android:id="@+id/dapan4"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="-25dp"
+            android:paddingTop="15dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:text="D. 40"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:background="@drawable/cuttum1"
+            android:layout_marginTop="-50dp"
+            android:layout_gravity="right"
+            android:paddingLeft="-25dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Qestion 2"
+                    android:fontFamily="@font/bentham"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cuttum1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mission2cau2"
+                    android:layout_marginTop="-40dp"/>
+            </RelativeLayout>
+
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="A. Hình A"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-55dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="B. Hình B"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-51dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="C. Hình C"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="D. Hình D"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Qestion 3"
+                    android:fontFamily="@font/bentham"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cuttum1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mission2cau3"
+                    android:layout_marginTop="-30dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Có bao nhiêu số 8 trong hình?"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginTop="-60dp"
+                android:layout_marginLeft="15dp"/>
+
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="A. 1"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="B. 2"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-51dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="C. 3"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="D. 4"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Qestion 4"
+                    android:fontFamily="@font/bentham"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cuttum1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-35dp"
+                    android:src="@drawable/mission2cau4"/>
+            </RelativeLayout>
+
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="A. Hình E"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-60dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="B. Hình A và B"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-51dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="C. Hình c"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="D. Hình D"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Qestion 5"
+                    android:fontFamily="@font/bentham"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cuttum1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mission2bai4"
+                    android:layout_marginTop="-20dp"/>
+            </RelativeLayout>
+
+            <RadioButton
+
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="A. 10"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-50dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="B. 7"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-51dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="C. 6"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="D. 9"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

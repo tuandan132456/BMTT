@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mission1"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mission 2"
+            android:fontFamily="@font/bungee"
+            android:textSize="45dp"
+            android:layout_gravity="center"
+            android:textColor="#a1c9f1"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="0dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/noidungcauhoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp"
+                android:text="Đâu là một loại hình chợ tạm tự phát thường xuất hiện trong các khu dân cư?"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/cuttom"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/socauhoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Qestion 1"
+                android:fontFamily="@font/bentham"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/cuttum1"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+
+        <RadioButton
+            android:id="@+id/dapan1"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cuttum1"
+            android:gravity="center"
+            android:paddingStart="-25dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="A. Ếch"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingLeft="-25dp" />
+        <RadioButton
+            android:id="@+id/dapan2"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="-25dp"
+            android:paddingTop="15dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:text="B. Cóc"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:background="@drawable/cuttum1"
+            android:layout_marginTop="-51dp"
+            android:layout_gravity="right"
+            android:paddingLeft="-25dp" />
+        <RadioButton
+            android:id="@+id/dapan3"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingStart="-25dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:text="C. Thằn Lằn"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:background="@drawable/cuttum1"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="-20dp" />
+        <RadioButton
+            android:id="@+id/dapan4"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="-25dp"
+            android:paddingTop="15dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:text="D. Nhái"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:background="@drawable/cuttum1"
+            android:layout_marginTop="-50dp"
+            android:layout_gravity="right"
+            android:paddingLeft="-25dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="40dp"
+                    android:paddingBottom="40dp"
+                    android:text="Đâu là tên một bãi biển ở Quảng Bình?"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:background="@drawable/cuttom"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Qestion 2"
+                    android:fontFamily="@font/bentham"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cuttum1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="A. Đá Lăn"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="B.  Đá Nhảy"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-51dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="C. Đá Chạy"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="D. Đá Bò"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="40dp"
+                    android:paddingBottom="40dp"
+                    android:text="Haiku là thể thơ truyền thống của nước nào?"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:background="@drawable/cuttom"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Qestion 3"
+                    android:fontFamily="@font/bentham"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cuttum1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="A.  Nhật Bản"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="B. Mông Cổ"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-51dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="C. Trung Quốc"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="D. Hàn Quốc"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="40dp"
+                    android:paddingBottom="40dp"
+                    android:text="Đâu là tên một loại bánh Huế?"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:background="@drawable/cuttom"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Qestion 4"
+                    android:fontFamily="@font/bentham"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cuttum1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="A. Khoái"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="B. Thích"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-51dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="C. Vui"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="D. Sướng"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="40dp"
+                    android:paddingBottom="40dp"
+                    android:text="Nhạc sĩ nào là người sáng tác ca khúc Cây đàn sinh viên?"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:background="@drawable/cuttom"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Qestion 5"
+                    android:fontFamily="@font/bentham"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cuttum1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="A. Bảo Chấn"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="B. Trịnh Công Sơn"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-51dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="C. Quốc An"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="D. Trần Tiến"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
