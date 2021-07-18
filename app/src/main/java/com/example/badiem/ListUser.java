@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 
@@ -22,14 +25,18 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
 
-public class List extends AppCompatActivity {
+public class ListUser extends AppCompatActivity {
 
     RecyclerView featuredRecycler;
     ViewCard adapter;
     Switch aSwitch ;
+    DatabaseReference databaseReference;
+    List<UserData> userData;
+    ImageView delete,edit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,21 +47,39 @@ public class List extends AppCompatActivity {
 
 
         featuredRecycler = findViewById(R.id.featred_recyclerrr);
-        featuredRecycler();
+
+        //featuredRecycler();
         aSwitch = findViewById(R.id.btnswitch);
 
+        ArrayList list = new ArrayList<>();
+        userData = new ArrayList<>();
 
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("User");
-        Query checkUser = reference.orderByChild("username");
-
-        checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
+        databaseReference = FirebaseDatabase.getInstance().getReference("User");
+        //Query checkUser = databaseReference.orderByChild("username").getRef();
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                GenericTypeIndicator<HashMap<String, UserData>> objectsGTypeInd = new GenericTypeIndicator<HashMap<String, UserData>>() {};
-                Map<String, UserData> objectHashMap = snapshot.getValue(objectsGTypeInd);
-                ArrayList<UserData> objectArrayList = new ArrayList<UserData>(objectHashMap.values());
-                objectArrayList.get(1);
-                //objectArrayList.
+                ArrayList<FeaturedHelpersClass> featuredLocations = new ArrayList<>();
+                featuredRecycler.setHasFixedSize(true);
+                featuredRecycler.setLayoutManager(new LinearLayoutManager(ListUser.this, LinearLayoutManager.VERTICAL,false));
+
+                for(DataSnapshot ds: snapshot.getChildren()){
+                    UserData data = ds.getValue(UserData.class);
+                    //helpersClasses.add(data);
+                    userData.add(data);
+                    String userDB = data.getUsername();
+                    String username = snapshot.child("username").getKey();//.getValue(String.class);
+                    System.out.println("Username: " + userDB);
+                   // list.add(username);
+                    featuredLocations.add(new FeaturedHelpersClass(R.drawable.avatarnon2, userDB, R.drawable.imgedit, R.drawable.imgdelete, aSwitch));
+
+                }
+                adapter = new ViewCard(featuredLocations);
+                featuredRecycler.setAdapter(adapter);
+                //onRestart();
+                //
+                //adapter = new ViewCard(helpersClasses);
+                //featuredRecycler.setAdapter(adapter);
             }
 
             @Override
@@ -63,11 +88,18 @@ public class List extends AppCompatActivity {
             }
         });
 
-
-
     }
 
-    private void featuredRecycler() {
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+/* private void featuredRecycler() {
         featuredRecycler.setHasFixedSize(true);
         featuredRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
 
@@ -81,5 +113,5 @@ public class List extends AppCompatActivity {
         featuredRecycler.setAdapter(adapter);
 
 
-    }
+    }*/
 }
