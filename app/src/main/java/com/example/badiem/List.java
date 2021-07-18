@@ -1,5 +1,6 @@
 package com.example.badiem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,8 +13,17 @@ import android.widget.Switch;
 import com.example.badiem.HelperClass.HomeAdapter.FeaturedHelpersClass;
 import com.example.badiem.HelperClass.HomeAdapter.ShowCard;
 import com.example.badiem.HelperClass.HomeAdapter.ViewCard;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.GenericTypeIndicator;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class List extends AppCompatActivity {
 
@@ -32,6 +42,28 @@ public class List extends AppCompatActivity {
         featuredRecycler = findViewById(R.id.featred_recyclerrr);
         featuredRecycler();
         aSwitch = findViewById(R.id.btnswitch);
+
+
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("User");
+        Query checkUser = reference.orderByChild("username");
+
+        checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                GenericTypeIndicator<HashMap<String, UserData>> objectsGTypeInd = new GenericTypeIndicator<HashMap<String, UserData>>() {};
+                Map<String, UserData> objectHashMap = snapshot.getValue(objectsGTypeInd);
+                ArrayList<UserData> objectArrayList = new ArrayList<UserData>(objectHashMap.values());
+                objectArrayList.get(1);
+                //objectArrayList.
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
 
     }
 
