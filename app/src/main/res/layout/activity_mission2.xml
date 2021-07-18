@@ -68,6 +68,7 @@
         </RelativeLayout>
 
         <RadioButton
+            android:enabled="false"
             android:id="@+id/dapan1"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
@@ -83,6 +84,7 @@
             android:textStyle="bold"
             android:paddingLeft="-25dp" />
         <RadioButton
+            android:enabled="false"
             android:id="@+id/dapan2"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
@@ -99,6 +101,7 @@
             android:layout_gravity="right"
             android:paddingLeft="-25dp" />
         <RadioButton
+            android:enabled="false"
             android:id="@+id/dapan3"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
@@ -114,6 +117,7 @@
             android:layout_marginTop="15dp"
             android:paddingLeft="-20dp" />
         <RadioButton
+            android:enabled="false"
             android:id="@+id/dapan4"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
@@ -179,6 +183,7 @@
             </RelativeLayout>
 
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -193,6 +198,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -208,6 +214,7 @@
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -222,6 +229,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -284,6 +292,7 @@
             </RelativeLayout>
 
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -298,6 +307,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -313,6 +323,7 @@
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -327,6 +338,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -389,6 +401,7 @@
             </RelativeLayout>
 
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -403,6 +416,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -418,6 +432,7 @@
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -432,6 +447,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -494,6 +510,7 @@
             </RelativeLayout>
 
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -508,6 +525,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -523,6 +541,7 @@
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -537,6 +556,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:enabled="false"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
