@@ -73,9 +73,12 @@ public class User extends AppCompatActivity {
                                     System.out.println("Check: " + hash.getSHA512(passwordEntered));
                                     edtUsername.setError(null);
                                     edtUsername.setErrorEnabled(false);
+                                    String usernameDB = snapshot.child(usernameEntered).child("username").getValue(String.class);
 
                                     //start menu
                                     Intent intentmenu = new Intent(User.this,Menu.class);
+                                    intentmenu.putExtra("username",usernameDB);
+                                    intentmenu.putExtra("password",passDB);
                                     startActivity(intentmenu);
                                 } else {
                                     edtPassword.setError("Wrong password");
