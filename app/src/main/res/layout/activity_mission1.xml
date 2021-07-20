@@ -65,11 +65,15 @@
             android:gravity="center"
             android:layout_marginBottom="40dp"/>
 
+        <RadioGroup
+            android:id="@+id/radiogroup1.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <RadioButton
-            android:id="@+id/dapan1"
+            android:id="@+id/cau1.1A"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-20dp"
+            android:layout_marginTop="0dp"
             android:background="@drawable/cuttum1"
             android:gravity="center"
             android:paddingStart="-25dp"
@@ -81,7 +85,7 @@
             android:textStyle="bold"
             android:paddingLeft="-25dp" />
         <RadioButton
-            android:id="@+id/dapan2"
+            android:id="@+id/cau1.1B"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:paddingStart="-25dp"
@@ -97,7 +101,7 @@
             android:layout_gravity="right"
             android:paddingLeft="-25dp" />
         <RadioButton
-            android:id="@+id/dapan3"
+            android:id="@+id/cau1.1C"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
@@ -112,7 +116,7 @@
             android:layout_marginTop="15dp"
             android:paddingLeft="-20dp" />
         <RadioButton
-            android:id="@+id/dapan4"
+            android:id="@+id/cau1.1D"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:paddingStart="-25dp"
@@ -127,7 +131,7 @@
             android:layout_marginTop="-50dp"
             android:layout_gravity="right"
             android:paddingLeft="-25dp" />
-
+        </RadioGroup>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -163,6 +167,10 @@
                     android:layout_marginTop="-40dp"/>
             </RelativeLayout>
 
+            <RadioGroup
+                android:id="@+id/radiogroup1.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <RadioButton
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
@@ -171,13 +179,13 @@
                 android:gravity="center"
                 android:paddingBottom="15dp"
                 android:text="A. Hình A"
-                android:id="@+id/cau2A"
+                android:id="@+id/cau1.2A"
                 android:textStyle="bold"
                 android:textSize="15dp"
                 android:checked="false"
                 android:textColor="#fff"
                 android:background="@drawable/cuttum1"
-                android:layout_marginTop="-55dp"
+                android:layout_marginTop="0dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
                 android:layout_width="175dp"
@@ -185,7 +193,7 @@
                 android:paddingStart="-25dp"
                 android:paddingTop="15dp"
                 android:gravity="center"
-                android:id="@+id/cau2B"
+                android:id="@+id/cau1.2B"
                 android:paddingBottom="15dp"
                 android:text="B. Hình B"
                 android:checked="false"
@@ -202,7 +210,7 @@
                 android:paddingStart="-25dp"
                 android:paddingTop="15dp"
                 android:gravity="center"
-                android:id="@+id/cau2C"
+                android:id="@+id/cau1.2C"
                 android:paddingBottom="15dp"
                 android:text="C. Hình C"
                 android:checked="false"
@@ -218,7 +226,7 @@
                 android:paddingStart="-25dp"
                 android:paddingTop="15dp"
                 android:gravity="center"
-                android:id="@+id/cau2D"
+                android:id="@+id/cau1.2D"
                 android:checked="false"
                 android:paddingBottom="15dp"
                 android:text="D. Hình D"
@@ -229,6 +237,8 @@
                 android:layout_marginTop="-50dp"
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
+            </RadioGroup>
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -274,13 +284,17 @@
                 android:layout_marginTop="-60dp"
                 android:layout_marginLeft="15dp"/>
 
+            <RadioGroup
+                android:id="@+id/radiogroup1.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <RadioButton
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
                 android:paddingTop="15dp"
                 android:gravity="center"
-                android:id="@+id/cau3A"
+                android:id="@+id/cau1.3A"
                 android:paddingBottom="15dp"
                 android:text="A. 1"
                 android:checked="false"
@@ -298,7 +312,7 @@
                 android:gravity="center"
                 android:paddingBottom="15dp"
                 android:text="B. 2"
-                android:id="@+id/cau3B"
+                android:id="@+id/cau1.3B"
                 android:checked="false"
                 android:textStyle="bold"
                 android:textSize="15dp"
@@ -315,7 +329,7 @@
                 android:gravity="center"
                 android:paddingBottom="15dp"
                 android:text="C. 3"
-                android:id="@+id/cau3C"
+                android:id="@+id/cau1.3C"
                 android:checked="false"
                 android:textStyle="bold"
                 android:textSize="15dp"
@@ -331,7 +345,7 @@
                 android:gravity="center"
                 android:paddingBottom="15dp"
                 android:text="D. 4"
-                android:id="@+id/cau3D"
+                android:id="@+id/cau1.3D"
                 android:checked="false"
                 android:textStyle="bold"
                 android:textSize="15dp"
@@ -340,6 +354,7 @@
                 android:layout_marginTop="-50dp"
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
+            </RadioGroup>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -375,6 +390,10 @@
                     android:src="@drawable/mission2cau4"/>
             </RelativeLayout>
 
+            <RadioGroup
+                android:id="@+id/radiogroup1.4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <RadioButton
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
@@ -383,13 +402,13 @@
                 android:gravity="center"
                 android:paddingBottom="15dp"
                 android:text="A. Hình E"
-                android:id="@+id/cau4A"
+                android:id="@+id/cau1.4A"
                 android:textStyle="bold"
                 android:textSize="15dp"
                 android:checked="false"
                 android:textColor="#fff"
                 android:background="@drawable/cuttum1"
-                android:layout_marginTop="-60dp"
+                android:layout_marginTop="0dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
                 android:layout_width="175dp"
@@ -397,7 +416,7 @@
                 android:paddingStart="-25dp"
                 android:paddingTop="15dp"
                 android:gravity="center"
-                android:id="@+id/cau4B"
+                android:id="@+id/cau1.4B"
                 android:paddingBottom="15dp"
                 android:text="B. Hình A và B"
                 android:textStyle="bold"
@@ -415,7 +434,7 @@
                 android:paddingTop="15dp"
                 android:gravity="center"
                 android:checked="false"
-                android:id="@+id/cau4C"
+                android:id="@+id/cau1.4C"
                 android:paddingBottom="15dp"
                 android:text="C. Hình c"
                 android:textStyle="bold"
@@ -429,7 +448,7 @@
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
                 android:paddingTop="15dp"
-                android:id="@+id/cau4D"
+                android:id="@+id/cau1.4D"
                 android:gravity="center"
                 android:paddingBottom="15dp"
                 android:text="D. Hình D"
@@ -441,6 +460,7 @@
                 android:layout_marginTop="-50dp"
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
+            </RadioGroup>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -475,7 +495,10 @@
                     android:src="@drawable/mission2bai4"
                     android:layout_marginTop="-20dp"/>
             </RelativeLayout>
-
+            <RadioGroup
+                android:id="@+id/radiogroup1.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <RadioButton
 
                 android:layout_width="175dp"
@@ -485,13 +508,13 @@
                 android:gravity="center"
                 android:paddingBottom="15dp"
                 android:text="A. 10"
-                android:id="@+id/cau5A"
+                android:id="@+id/cau1.5A"
                 android:textStyle="bold"
                 android:checked="false"
                 android:textSize="15dp"
                 android:textColor="#fff"
                 android:background="@drawable/cuttum1"
-                android:layout_marginTop="-50dp"
+                android:layout_marginTop="0dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
                 android:layout_width="175dp"
@@ -501,7 +524,7 @@
                 android:gravity="center"
                 android:paddingBottom="15dp"
                 android:text="B. 7"
-                android:id="@+id/cau5B"
+                android:id="@+id/cau1.5B"
                 android:checked="false"
                 android:textStyle="bold"
                 android:textSize="15dp"
@@ -516,7 +539,7 @@
                 android:paddingStart="-25dp"
                 android:paddingTop="15dp"
                 android:gravity="center"
-                android:id="@+id/cau5C"
+                android:id="@+id/cau1.5C"
                 android:paddingBottom="15dp"
                 android:text="C. 6"
                 android:checked="false"
@@ -533,7 +556,7 @@
                 android:paddingTop="15dp"
                 android:gravity="center"
                 android:checked="false"
-                android:id="@+id/cau5D"
+                android:id="@+id/cau1.5D"
                 android:paddingBottom="15dp"
                 android:text="D. 9"
                 android:textStyle="bold"
@@ -543,6 +566,24 @@
                 android:layout_marginTop="-50dp"
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
+
+                <Button
+                    android:id="@+id/submit1"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/cuttum1"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Submit"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#a1c9f1"
+                    android:layout_marginBottom="30dp"/>
+            </RadioGroup>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
