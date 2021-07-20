@@ -32,7 +32,7 @@
         android:includeFontPadding="false"
         android:id="@+id/txtNameProfile"
         android:text="Nguyễn Đăng Tuấn Đan"
-        android:textColor="#696969"
+        android:textColor="#000"
         android:textSize="23dp"
         android:layout_marginTop="25dp"/>
 

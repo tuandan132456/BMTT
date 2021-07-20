@@ -7,32 +7,41 @@
     android:padding="10dp"
     android:orientation="vertical"
     android:background="#CCE1F3">
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/changePass"
-    />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/signout"/>
+
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/btnMenuBack"
         android:background="@drawable/back"/>
 
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:includeFontPadding="false"
+        android:text="Sign Out"
+        android:textColor="#a1c9f1"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:backgroundTint="#fff"
+        android:layout_marginTop="-45dp"
+        android:layout_marginRight="7dp"/>
+
     <TextView
         android:id="@+id/logoName"
-        android:layout_width="wrap_content"
+        android:layout_width="293dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
         android:fontFamily="@font/bungee"
-        android:text="ABCXYZ"
+        android:gravity="left"
+        android:includeFontPadding="false"
+        android:text="Complete 5 Missions"
         android:textColor="#fff"
         android:textSize="45sp"
         android:transitionName="logo_text"
-        android:layout_gravity="center"
-        android:layout_marginTop="-10dp" />
+        android:layout_marginBottom="20dp"/>
 
     <Button
 
@@ -53,7 +62,7 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/cuttombutton"
         android:text="mission 2"
         android:id="@+id/mission2"
@@ -67,9 +76,9 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/cuttombutton"
-        android:text="create 3"
+        android:text="Mission 3"
         android:id="@+id/mission3"
         android:textColor="#a1c9f1"
         android:textSize="18sp"
@@ -81,7 +90,7 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/cuttombutton"
         android:text="mission 4"
         android:id="@+id/mission4"
@@ -95,7 +104,7 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/cuttombutton"
         android:text="mission 5"
         android:id="@+id/mission5"
@@ -105,4 +114,17 @@
         app:backgroundTint="#fff"
         android:fontFamily="@font/bungee" />
 
+
+    <Button
+        android:id="@+id/changePass"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:includeFontPadding="false"
+        android:text="Change PassWord"
+        android:textColor="#fff"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:backgroundTint="#000" />
 </LinearLayout>

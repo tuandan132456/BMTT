@@ -44,7 +44,7 @@
             android:fontFamily="@font/bungee"
             android:includeFontPadding="false"
             android:text="deathcoi"
-            android:textColor="#a1c9f1"
+            android:textColor="#000"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/avatar"

@@ -81,8 +81,8 @@
             app:boxStrokeWidth="2dp"
             app:endIconTint="#000000"
             app:hintTextColor="#000000"
-            app:passwordToggleEnabled="true"
-            app:startIconTint="#000000">
+            app:startIconTint="#000000"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"

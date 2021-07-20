@@ -18,15 +18,6 @@
         tools:ignore="MissingConstraints"
         android:layout_marginTop="5dp"/>
 
-
-    <ImageView
-        android:layout_width="55dp"
-        android:layout_height="50dp"
-        android:src="@drawable/bacham"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="353dp"
-        tools:layout_editor_absoluteY="-3dp" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/featred_recyclerrr"
         android:layout_width="match_parent"
