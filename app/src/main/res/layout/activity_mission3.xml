@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mission 2"
+            android:text="Mission 3"
             android:fontFamily="@font/bungee"
             android:textSize="45dp"
             android:layout_gravity="center"
@@ -67,8 +67,12 @@
                 android:textColor="#fff"/>
         </RelativeLayout>
 
+        <RadioGroup
+            android:id="@+id/radiogroup3.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <RadioButton
-            android:id="@+id/dapan1"
+            android:id="@+id/cau3.1A"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -83,7 +87,7 @@
             android:textStyle="bold"
             android:paddingLeft="-25dp" />
         <RadioButton
-            android:id="@+id/dapan2"
+            android:id="@+id/cau3.1B"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:paddingStart="-25dp"
@@ -99,7 +103,7 @@
             android:layout_gravity="right"
             android:paddingLeft="-25dp" />
         <RadioButton
-            android:id="@+id/dapan3"
+            android:id="@+id/cau3.1C"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
@@ -114,7 +118,7 @@
             android:layout_marginTop="15dp"
             android:paddingLeft="-20dp" />
         <RadioButton
-            android:id="@+id/dapan4"
+            android:id="@+id/cau3.1D"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:paddingStart="-25dp"
@@ -130,7 +134,7 @@
             android:layout_gravity="right"
             android:paddingLeft="-25dp" />
 
-
+        </RadioGroup>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -177,8 +181,12 @@
                     android:textStyle="bold"
                     android:textColor="#fff"/>
             </RelativeLayout>
-
+            <RadioGroup
+                android:id="@+id/radiogroup3.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <RadioButton
+                android:id="@+id/cau3.2A"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -193,6 +201,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:id="@+id/cau3.2B"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -208,6 +217,7 @@
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:id="@+id/cau3.2C"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -222,6 +232,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:id="@+id/cau3.2D"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -236,6 +247,7 @@
                 android:layout_marginTop="-50dp"
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
+            </RadioGroup>/
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -282,8 +294,12 @@
                     android:textStyle="bold"
                     android:textColor="#fff"/>
             </RelativeLayout>
-
+            <RadioGroup
+                android:id="@+id/radiogroup3.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <RadioButton
+                android:id="@+id/cau3.3A"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -298,6 +314,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:id="@+id/cau3.3B"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -313,6 +330,7 @@
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:id="@+id/cau3.3C"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -327,6 +345,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:id="@+id/cau3.3D"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -341,6 +360,7 @@
                 android:layout_marginTop="-50dp"
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
+            </RadioGroup>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -387,8 +407,12 @@
                     android:textStyle="bold"
                     android:textColor="#fff"/>
             </RelativeLayout>
-
+            <RadioGroup
+                android:id="@+id/radiogroup3.4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <RadioButton
+                android:id="@+id/cau3.4A"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -403,6 +427,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:id="@+id/cau3.4B"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -418,6 +443,7 @@
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:id="@+id/cau3.4C"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -432,6 +458,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:id="@+id/cau3.4D"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -446,6 +473,7 @@
                 android:layout_marginTop="-50dp"
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
+            </RadioGroup>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -492,8 +520,12 @@
                     android:textStyle="bold"
                     android:textColor="#fff"/>
             </RelativeLayout>
-
+            <RadioGroup
+                android:id="@+id/radiogroup3.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <RadioButton
+                android:id="@+id/cau3.5A"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -508,6 +540,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:id="@+id/cau3.5B"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -523,6 +556,7 @@
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:id="@+id/cau3.5C"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -537,6 +571,7 @@
                 android:layout_marginTop="15dp"
                 android:paddingLeft="-25dp" />
             <RadioButton
+                android:id="@+id/cau3.5D"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:paddingStart="-25dp"
@@ -551,6 +586,25 @@
                 android:layout_marginTop="-50dp"
                 android:layout_gravity="right"
                 android:paddingLeft="-25dp" />
+
+
+                <Button
+                    android:id="@+id/submit3"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/cuttum1"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Submit"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#a1c9f1"
+                    android:layout_marginBottom="30dp"/>
+            </RadioGroup>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
