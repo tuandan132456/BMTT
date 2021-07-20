@@ -11,31 +11,29 @@ import android.widget.ImageView;
 
 public class Admin extends AppCompatActivity {
     Button btnListUser, btnCreateAcc, btnAuditing;
-    ImageView imv;
+    ImageView imv,back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_admin);
-        btnListUser = findViewById(R.id.btnList);
+        btnListUser = findViewById(R.id.btnListt);
         btnCreateAcc = findViewById(R.id.btnCreateAccount);
         btnAuditing = findViewById(R.id.btnAuditing);
         imv = findViewById(R.id.imvRec);
-
-
+        back = findViewById(R.id.adminback);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
         btnAuditing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(MainActivity.isAuditing){
-                    MainActivity.isAuditing = false;
-                    imv.setVisibility(View.INVISIBLE);
-                }
-                else {
-                    MainActivity.isAuditing = true;
-                    imv.setVisibility(View.VISIBLE);
-                }
-
+                Intent intent = new Intent(getApplication(),Log_history.class);
+                startActivity(intent);
             }
         });
 
@@ -50,8 +48,8 @@ public class Admin extends AppCompatActivity {
         btnListUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Admin.this, ListUser.class);
-                startActivity(intent);
+                Intent intentt = new Intent(Admin.this, ListUser.class);
+                startActivity(intentt);
             }
         });
     }

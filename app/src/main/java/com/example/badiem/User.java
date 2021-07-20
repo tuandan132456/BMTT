@@ -9,7 +9,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
+import com.example.badiem.HelperClass.HomeAdapter.HistoryHelpersClass;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -18,19 +20,31 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class User extends AppCompatActivity {
 
     Button btnLogin;
     TextInputLayout edtUsername,edtPassword;
     Hash hash = new Hash();
-    String encryptedStr ;
+    String encryptedStr,DateTime,ActionName ;
+    DatabaseReference getAuth;
+    ImageView back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_user);
-
+        back = findViewById(R.id.userback);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
         btnLogin = findViewById(R.id.btnLogin);
         edtUsername = findViewById(R.id.edtUsername);
         edtPassword = findViewById(R.id.edtPassword);
@@ -74,6 +88,15 @@ public class User extends AppCompatActivity {
                                     edtUsername.setError(null);
                                     edtUsername.setErrorEnabled(false);
                                     String usernameDB = snapshot.child(usernameEntered).child("username").getValue(String.class);
+                                    //ghi history
+                                    getAuth = FirebaseDatabase.getInstance().getReference("LOG_Data");
+                                    Date date = new Date();
+                                    DateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+                                    DateTime  = df.format(date);
+                                    ActionName = "Dang Nhap";
+                                    HistoryHelpersClass historyHelpersClass = new HistoryHelpersClass(usernameEntered,ActionName,DateTime);
+                                    //// TODO doan nay` xai bien cuc bo duoc khong, khong biet cai root luu ntn?
+                                    getAuth.push().setValue(historyHelpersClass);
 
                                     //start menu
                                     Intent intentmenu = new Intent(User.this,Menu.class);

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
@@ -22,7 +23,7 @@ import java.util.Objects;
 public class LoginAdmin extends AppCompatActivity {
 
     DatabaseReference mData;
-    
+    ImageView back;
     private Button btnLogin;
     private TextInputLayout txtPass, txtUserName;
     Hash hash = new Hash();
@@ -38,7 +39,13 @@ public class LoginAdmin extends AppCompatActivity {
         txtUserName = findViewById(R.id.edtAdminPass);
         String Username = txtUserName.getEditText().getText().toString().trim();
         String Password = txtPass.getEditText().getText().toString().trim();
-
+        back = findViewById(R.id.loginadminback);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

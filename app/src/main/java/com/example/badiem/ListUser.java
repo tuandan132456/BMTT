@@ -36,7 +36,7 @@ public class ListUser extends AppCompatActivity {
     Switch aSwitch ;
     DatabaseReference databaseReference;
     List<UserData> userData;
-    ImageView delete,edit;
+    ImageView back,edit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,6 +88,13 @@ public class ListUser extends AppCompatActivity {
             }
         });
 
+        back = findViewById(R.id.useerback);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 
     @Override

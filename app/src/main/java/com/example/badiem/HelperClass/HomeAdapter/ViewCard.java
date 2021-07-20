@@ -11,19 +11,22 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.badiem.History;
 import com.example.badiem.R;
+import com.example.badiem.UserData;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ViewCard extends RecyclerView.Adapter<ViewCard.FeaturedViewHoder> {
 
     ArrayList<FeaturedHelpersClass> featuredLocations;
     DatabaseReference databaseReference;
-
+    List<HistoryHelpersClass> userData;
     public ViewCard(ArrayList<FeaturedHelpersClass> featuredLocations) {
         this.featuredLocations = featuredLocations;
     }
@@ -86,7 +89,25 @@ public class ViewCard extends RecyclerView.Adapter<ViewCard.FeaturedViewHoder> {
                     //v.getContext().startActivity(intent);
                 }
             });
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int itemPosition = getAdapterPosition();
+                    userData = new ArrayList<>();
+                    FeaturedHelpersClass item = featuredLocations.get(itemPosition);
+                    databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
 
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+                }
+            });
 
         }
     }

@@ -10,6 +10,7 @@
     android:background="#CCE1F3">
 
     <ImageView
+        android:id="@+id/loginadminback"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/backk"

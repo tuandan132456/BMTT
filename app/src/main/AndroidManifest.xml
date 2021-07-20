@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BaDiem">
-        <activity android:name=".showlist"></activity>
+        <activity android:name=".Log_history"></activity>
+        <activity android:name=".showlist" />
         <activity android:name=".ActiShowList" />
         <activity android:name=".Mission5" />
         <activity android:name=".Mission4" />
