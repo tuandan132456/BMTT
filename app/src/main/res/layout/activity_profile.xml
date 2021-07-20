@@ -30,6 +30,7 @@
         android:layout_gravity="center"
         android:fontFamily="@font/bungee"
         android:includeFontPadding="false"
+        android:id="@+id/txtNameProfile"
         android:text="Nguyễn Đăng Tuấn Đan"
         android:textColor="#696969"
         android:textSize="23dp"
@@ -61,12 +62,7 @@
             app:endIconTint="#000000"
             app:hintTextColor="#000000"
             app:startIconTint="#000000"
-            android:layout_marginTop="15dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginTop="15dp"/>
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -74,6 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:id="@+id/edtPassProfile"
             android:hint="Password"
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
@@ -105,6 +102,7 @@
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
             android:textColorHint="#000000"
+            android:id="@+id/edtNewPass"
             android:transitionName="username_text"
             app:boxCornerRadiusBottomEnd="50dp"
             app:boxCornerRadiusBottomStart="50dp"
@@ -124,7 +122,7 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edtUsername"
+            android:id="@+id/edtConfirmProfile"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -151,10 +149,10 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnUpdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GO"
+            android:text="Update"
             app:backgroundTint="#000"
             android:layout_marginTop="35dp"
             android:layout_marginBottom="5dp"

@@ -35,4 +35,24 @@ public class FeaturedHelpersClass {
     }
 
     public boolean getaSwitch(){ return false;}
+
+    public void setImage(int image) {
+        this.image = image;
+    }
+
+    public void setImage1(int image1) {
+        this.image1 = image1;
+    }
+
+    public void setImage2(int image2) {
+        this.image2 = image2;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setaSwitch(Switch aSwitch) {
+        this.aSwitch = aSwitch;
+    }
 }

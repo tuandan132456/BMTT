@@ -24,7 +24,7 @@
         <activity android:name=".Profile" />
         <activity android:name=".User" />
         <activity android:name=".Show" />
-        <activity android:name=".List" />
+        <activity android:name=".ListUser" />
         <activity android:name=".Admin" />
         <activity android:name=".MainActivity">
             <intent-filter>

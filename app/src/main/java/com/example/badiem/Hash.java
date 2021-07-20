@@ -3,7 +3,7 @@ package com.example.badiem;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class Crypto {
+public class Hash {
     public String getSHA512(String str){
         String generatePass = null;
         try {

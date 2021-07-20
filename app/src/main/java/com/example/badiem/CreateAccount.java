@@ -23,21 +23,29 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class CreateAccount extends AppCompatActivity {
+    Hash hash = new Hash();
+
     Button btnCreate;
     TextInputLayout fullname,username,phone,pass,confirmpass;
     String FullName,UserName,PhoneNo,PassWord,ConfirmPassword,DateTime;
     ImageView back;
     DatabaseReference fAuth,getfAuth;
+    Boolean b = MainActivity.isAuditing;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
+
+        System.out.println("Value: " + b);
         back = findViewById(R.id.btnBackAdmin);
         fullname = findViewById(R.id.txtFullname);
         username = findViewById(R.id.txtUsername);
         phone   = findViewById(R.id.txtPhone);
         pass = findViewById(R.id.txtPassword);
         confirmpass = findViewById(R.id.txtConfirmPass);
+
+
+
 
         //getfAuth = FirebaseDatabase.getInstance().getReference("LOG");
         //getfAuth.setValue("day la log");
@@ -85,11 +93,14 @@ public class CreateAccount extends AppCompatActivity {
         });
     }
     public void CreateAccount(){
+
+        //// TODO: 17/07/2021 Làm sao để đẩy cái pass encrypted lên?? Done
         FullName = fullname.getEditText().getText().toString().trim();
         UserName = username.getEditText().getText().toString().trim();
         PhoneNo = phone.getEditText().getText().toString().trim();
-        PassWord = pass.getEditText().getText().toString().trim();
+        PassWord = hash.getSHA512(pass.getEditText().getText().toString().trim());
         Date date = new Date();
+
 
         DateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 

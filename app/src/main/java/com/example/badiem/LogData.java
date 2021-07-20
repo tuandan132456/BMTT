@@ -16,11 +16,10 @@ public class LogData {
     public LogData(){
 
     }
-    public LogData(String username,String action,  String details,String dateNow){
+    public LogData(String username,String action, String details,String dateNow){
         this.username = username;
         this.action = action;
         this.details = details;
         this.dateNow = dateNow;
-
     }
 }

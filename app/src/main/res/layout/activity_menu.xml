@@ -7,10 +7,15 @@
     android:padding="10dp"
     android:orientation="vertical"
     android:background="#CCE1F3">
-
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/changePass"
+    />
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:id="@+id/btnMenuBack"
         android:background="@drawable/back"/>
 
     <TextView
