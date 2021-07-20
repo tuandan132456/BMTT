@@ -21,22 +21,22 @@ public class Mission2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mission2);
 
-        radioGroup = (RadioGroup) findViewById(R.id.radiogroup1);
+        radioGroup = (RadioGroup) findViewById(R.id.radiogroup2_1);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
                 switch (i){
-                    case R.id.dapan1:
+                    case R.id.cau2_1A:
                         Toast.makeText(Mission2.this, "Bạn chọn A", Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.dapan2:
+                    case R.id.cau2_1B:
                         Toast.makeText(Mission2.this, "Bạn chọn B", Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.dapan3:
+                    case R.id.cau2_1C:
                         Toast.makeText(Mission2.this, "Bạn chọn C", Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.dapan4:
+                    case R.id.cau2_1D:
                         Toast.makeText(Mission2.this, "Bạn chọn D", Toast.LENGTH_SHORT).show();
                         break;
                 }

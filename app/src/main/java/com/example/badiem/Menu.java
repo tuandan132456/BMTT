@@ -19,7 +19,7 @@ import java.util.Date;
 
 public class Menu extends AppCompatActivity {
     ImageView back;
-    Button changePass,dangxuat;
+    Button changePass,dangxuat,mission1,mission2,mission3,mission4,mission5;
     String DateTime,ActionName,username,password;
     DatabaseReference getAuth;
     @Override
@@ -59,6 +59,47 @@ public class Menu extends AppCompatActivity {
                 getAuth.push().setValue(historyHelpersClass);
 
                 onBackPressed();
+            }
+        });
+        mission1 = findViewById(R.id.mission1);
+        mission2 = findViewById(R.id.mission2);
+        mission3 = findViewById(R.id.mission3);
+        mission4 = findViewById(R.id.mission4);
+        mission5 = findViewById(R.id.mission5);
+
+        mission1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(getApplication(),Mission1.class);
+                startActivity(intent1);
+            }
+        });
+        mission2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1  = new Intent(getApplication(),Mission2.class);
+                startActivity(intent1);
+            }
+        });
+        mission3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1  = new Intent(getApplication(),Mission3.class);
+                startActivity(intent1);
+            }
+        });
+        mission4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1  = new Intent(getApplication(),Mission4.class);
+                startActivity(intent1);
+            }
+        });
+        mission5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1  = new Intent(getApplication(),Mission5.class);
+                startActivity(intent1);
             }
         });
     }
