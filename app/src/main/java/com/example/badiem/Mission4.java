@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.badiem.HelperClass.HomeAdapter.HistoryHelpersClass;
 import com.google.firebase.database.DatabaseReference;
@@ -155,7 +156,16 @@ public class Mission4 extends AppCompatActivity {
                     DateTime  = df.format(date);
                     ActionName = "Complete Mission 4";
                     HistoryHelpersClass historyHelpersClass = new HistoryHelpersClass(username,ActionName,DateTime);
-                    getAuth.push().setValue(historyHelpersClass);
+                    checkSwitch check = checkSwitch.getReference();
+                    if(check.getCheck()==1)
+                    {
+                        getAuth.push().setValue(historyHelpersClass);
+                    }
+
+                    else
+                    {
+                        //Toast.makeText(Menu.this,"Log out !",Toast.LENGTH_LONG).show();
+                    }
 
                     onBackPressed();
 

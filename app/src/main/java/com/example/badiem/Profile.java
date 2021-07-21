@@ -11,11 +11,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.badiem.HelperClass.HomeAdapter.HistoryHelpersClass;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 public class Profile extends AppCompatActivity {
@@ -23,15 +27,20 @@ public class Profile extends AppCompatActivity {
     ImageView back;
     TextView name;
     TextInputLayout passcu,newpass,confirm;
-    String userDB,passDB,encryptPassCu;
+
+    String userDB,passDB,encryptPassCu,DateTime,ActionName,username;
+    DatabaseReference getAuth;
     EncryptAndHash encryptAndHash = new EncryptAndHash();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_profile);
-
+        getAuth = FirebaseDatabase.getInstance().getReference("LOG_Data");
+        shareData b = shareData.getInstance();
+        username = b.getStr();
         name = findViewById(R.id.txtNameProfile);
         update = findViewById(R.id.btnUpdate);
 
@@ -68,7 +77,25 @@ public class Profile extends AppCompatActivity {
                         reference.child(userDB).updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
                             @Override
                             public void onSuccess(Object o) {
-                                Toast.makeText(getApplicationContext(),"Update Success",Toast.LENGTH_LONG).show();
+                                Date date = new Date();
+
+                                DateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+
+                                DateTime  = df.format(date);
+                                ActionName = "Change Password";
+                                HistoryHelpersClass historyHelpersClass = new HistoryHelpersClass(username,ActionName,DateTime);
+                                checkSwitch check = checkSwitch.getReference();
+                                if(check.getCheck()==1)
+                                {
+                                    getAuth.push().setValue(historyHelpersClass);
+                                }
+
+                                else
+                                {
+                                    //Toast.makeText(Menu.this,"Log out !",Toast.LENGTH_LONG).show();
+                                }
+
+                                onBackPressed();
                             }
                         });
                     }

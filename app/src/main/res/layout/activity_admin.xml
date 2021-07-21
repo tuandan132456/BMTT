@@ -83,4 +83,25 @@
         android:textStyle="bold"
         app:backgroundTint="#fff"
         android:fontFamily="@font/bungee" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="user control"
+        android:fontFamily="@font/bungee"/>
+
+    <Switch
+        android:id="@+id/switchbutton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Mode"
+        android:switchPadding="5dp"
+        android:showText="true"
+        android:textOff="Off"
+        android:textOn="On"
+         />
+
 </LinearLayout>

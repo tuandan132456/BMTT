@@ -158,7 +158,16 @@ public class Mission2 extends AppCompatActivity {
                     DateTime  = df.format(date);
                     ActionName = "Complete Mission 2";
                     HistoryHelpersClass historyHelpersClass = new HistoryHelpersClass(username,ActionName,DateTime);
-                    getAuth.push().setValue(historyHelpersClass);
+                    checkSwitch check = checkSwitch.getReference();
+                    if(check.getCheck()==1)
+                    {
+                        getAuth.push().setValue(historyHelpersClass);
+                    }
+
+                    else
+                    {
+                        //Toast.makeText(Menu.this,"Log out !",Toast.LENGTH_LONG).show();
+                    }
 
                     onBackPressed();
 

@@ -7,11 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.Switch;
+import android.widget.ToggleButton;
 
 public class Admin extends AppCompatActivity {
     Button btnListUser, btnCreateAcc, btnAuditing;
     ImageView imv,back;
+    Switch battat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,5 +56,22 @@ public class Admin extends AppCompatActivity {
                 startActivity(intentt);
             }
         });
+        Switch switch1 = (Switch) findViewById(R.id.switchbutton);
+        checkSwitch checkau = checkSwitch.getReference();
+        switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked)
+                    checkau.setCheck(1);
+                else
+                    checkau.setCheck(0);
+            }
+        });
+        int au = checkau.getCheck();
+        if(au ==1)
+            switch1.setChecked(true);
+        else
+            switch1.setChecked(false);
+
     }
 }

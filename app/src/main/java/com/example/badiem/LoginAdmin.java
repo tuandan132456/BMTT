@@ -18,9 +18,10 @@ public class LoginAdmin extends AppCompatActivity {
 
     DatabaseReference mData;
     ImageView back;
-    private Button btnLogin;
-    private TextInputLayout txtPass, txtUserName;
+    Button btnLogin;
+    TextInputLayout txtPass, txtUserName;
     EncryptAndHash encryptAndHash = new EncryptAndHash();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,11 +32,10 @@ public class LoginAdmin extends AppCompatActivity {
         mData = FirebaseDatabase.getInstance().getReference();
 
         btnLogin = findViewById(R.id.btnLogin);
+
+        txtUserName = findViewById(R.id.edtAdminname);
+
         txtPass = findViewById(R.id.edtAdminPass);
-        txtUserName = findViewById(R.id.edtAdminPass);
-
-
-
 
         back = findViewById(R.id.loginadminback);
         back.setOnClickListener(new View.OnClickListener() {
@@ -47,18 +47,17 @@ public class LoginAdmin extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String Username = txtUserName.getEditText().getText().toString().trim();
-                final String Password = txtPass.getEditText().getText().toString().trim();
-                System.out.println("---------------edtUsername--" + Username);
-                System.out.println("---------------edtPassword--" + Password);
-                if(!checkAdmin(Username,Password))
+                if(checkAdmin(txtUserName.getEditText().getText().toString(),txtPass.getEditText().getText().toString()))
                 {
-                    Toast.makeText(LoginAdmin.this,"Wronggggg",Toast.LENGTH_LONG).show();
-                    return;
-                }
-                else {
                     Intent intent = new Intent(LoginAdmin.this,Admin.class);
                     startActivity(intent);
+
+                }
+                else {
+                    System.out.println("Encrypted: " + txtUserName.getEditText().getText().toString());
+                    System.out.println("Encrypted: " + txtPass.getEditText().getText().toString());
+                    Toast.makeText(LoginAdmin.this,"Wronggggg",Toast.LENGTH_LONG).show();
+                    return;
                 }
             }
         });
@@ -67,9 +66,11 @@ public class LoginAdmin extends AppCompatActivity {
     public boolean checkAdmin(String a, String b){
         if(a.equals("admin"))
         {
-            if(!b.equals("admin"))
+            if(b.equals("admin"))
+                return true;
+            else
                 return false;
-            else return true;
+
         }
         return false;
 
