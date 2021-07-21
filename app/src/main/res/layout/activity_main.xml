@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:background="@drawable/cuttombutton"
+        android:background="@drawable/custombutton"
         android:text="Admin"
         android:id="@+id/btnAdminScreen"
         android:textColor="#a1c9f1"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:background="@drawable/cuttombutton"
+        android:background="@drawable/custombutton"
         android:id="@+id/btnUserScreen"
         android:text="User"
         android:textColor="#a1c9f1"
@@ -49,5 +49,17 @@
         android:textStyle="bold"
         app:backgroundTint="#fff"
         android:fontFamily="@font/bungee" />
-
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custombutton"
+        android:id="@+id/btnTest"
+        android:text="TEST Encrypt"
+        android:textColor="#a1c9f1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#fff"
+        android:fontFamily="@font/bungee" />
 </LinearLayout>

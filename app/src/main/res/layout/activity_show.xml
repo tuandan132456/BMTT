@@ -75,7 +75,7 @@
             android:layout_marginLeft="190dp"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
-            android:background="@drawable/cuttombutton"
+            android:background="@drawable/custombutton"
             android:text="Delete"
             android:textColor="#fff"
             android:textStyle="bold"

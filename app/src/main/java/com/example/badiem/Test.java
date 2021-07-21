@@ -23,17 +23,17 @@ public class Test extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_test);
-        Hash cr = new Hash();
+        EncryptAndHash cr = new EncryptAndHash();
         binding();
 
         btnResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                txtv.setText(cr.getSHA512(txt.getText().toString()));
-                txtpssv.setText(cr.getSHA512(txtpss.getText().toString()));
+                txtv.setText(cr.Encrypter(txt.getText().toString()));
+                txtpssv.setText(cr.Encrypter(txtpss.getText().toString()));
 
-                System.out.println("text: " + cr.getSHA512(txt.getText().toString()));
-                System.out.println("textPass: " + cr.getSHA512(txtpss.getText().toString()));
+                System.out.println("text: " + cr.Encrypter(txt.getText().toString()));
+                System.out.println("textPass: " + cr.Encrypter(txtpss.getText().toString()));
             }
         });
 
