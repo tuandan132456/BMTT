@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +27,7 @@ import java.util.HashMap;
 
 public class Profile extends AppCompatActivity {
     Button update;
+    ImageView back;
     TextView name;
     TextInputLayout passcu,newpass,confirm;
     String userDB,passDB,encryptPassCu;
@@ -43,7 +45,13 @@ public class Profile extends AppCompatActivity {
         passcu = findViewById(R.id.edtPassProfile);
         newpass = findViewById(R.id.edtNewPass);
         confirm = findViewById(R.id.edtConfirmProfile);
-
+        back = findViewById(R.id.PasswordBack);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
         getUser();
 
         update.setOnClickListener(new View.OnClickListener() {

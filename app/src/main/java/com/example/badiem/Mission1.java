@@ -12,6 +12,14 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.example.badiem.HelperClass.HomeAdapter.HistoryHelpersClass;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 //1D
 //2C
 //3A
@@ -21,6 +29,8 @@ public class Mission1 extends AppCompatActivity {
 
     Button submit;
     RadioGroup cau1,cau2,cau3,cau4,cau5;
+    String DateTime,ActionName,username;
+    DatabaseReference getAuth;
     int dem=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +38,9 @@ public class Mission1 extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_mission1);
-
+        getAuth = FirebaseDatabase.getInstance().getReference("LOG_Data");
+        shareData b = shareData.getInstance();
+        username = b.getStr();
         cau1 = findViewById(R.id.radiogroup1_1);
         cau2 = findViewById(R.id.radiogroup1_2);
         cau3 = findViewById(R.id.radiogroup1_3);
@@ -139,6 +151,15 @@ public class Mission1 extends AppCompatActivity {
                     builder.setMessage("You complete the mission 1 !");
                     builder.setCancelable(false);
                     AlertDialog show = builder.show();
+                    Date date = new Date();
+
+                    DateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+
+                    DateTime  = df.format(date);
+                    ActionName = "Complete Mission 1";
+                    HistoryHelpersClass historyHelpersClass = new HistoryHelpersClass(username,ActionName,DateTime);
+                    getAuth.push().setValue(historyHelpersClass);
+
                     onBackPressed();
 
                 }

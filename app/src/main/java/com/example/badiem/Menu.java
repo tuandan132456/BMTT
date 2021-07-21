@@ -31,12 +31,7 @@ public class Menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         getAuth = FirebaseDatabase.getInstance().getReference("LOG_Data");
         back = findViewById(R.id.btnMenuBack);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+        back.setVisibility(View.GONE);
         changePass = findViewById(R.id.changePass);
         changePass.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +42,8 @@ public class Menu extends AppCompatActivity {
         Intent intent = getIntent();
 
         username = intent.getStringExtra("username");
+        shareData a = shareData.getInstance();
+        a.setStr(username);
         dangxuat = findViewById(R.id.signout);
         dangxuat.setOnClickListener(new View.OnClickListener() {
 
