@@ -34,8 +34,7 @@ public class Profile extends AppCompatActivity {
     ImageView back;
     TextView name;
     TextInputLayout passcu,newpass,confirm;
-    String userDB,passDB,encryptPassCu;
-    String DateTime,ActionName,username;
+    String userDB,passDB,encryptPassCu,DateTime,ActionName,username;
     DatabaseReference getAuth;
     Hash hash = new Hash();
     @Override
@@ -44,7 +43,9 @@ public class Profile extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_profile);
-
+        getAuth = FirebaseDatabase.getInstance().getReference("LOG_Data");
+        shareData b = shareData.getInstance();
+        username = b.getStr();
         name = findViewById(R.id.txtNameProfile);
         update = findViewById(R.id.btnUpdate);
 
@@ -94,11 +95,12 @@ public class Profile extends AppCompatActivity {
                                     getAuth.push().setValue(historyHelpersClass);
                                 }
 
-                                else {
+                                else
+                                {
                                     //Toast.makeText(Menu.this,"Log out !",Toast.LENGTH_LONG).show();
-
-                                    Toast.makeText(getApplicationContext(), "Update Success", Toast.LENGTH_LONG).show();
                                 }
+
+                                onBackPressed();
                             }
                         });
                     }
