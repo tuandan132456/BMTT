@@ -25,9 +25,10 @@ public class LoginAdmin extends AppCompatActivity {
 
     DatabaseReference mData;
     ImageView back;
-    private Button btnLogin;
-    private TextInputLayout txtPass, txtUserName;
+    Button btnLogin;
+   TextInputLayout txtPass, txtUserName;
     Hash hash = new Hash();
+    String Username,Password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,9 +40,7 @@ public class LoginAdmin extends AppCompatActivity {
 
         btnLogin = findViewById(R.id.btnLogin);
         txtPass = findViewById(R.id.edtAdminPass);
-        txtUserName = findViewById(R.id.edtAdminPass);
-        String Username = txtUserName.getEditText().getText().toString().trim();
-        String Password = txtPass.getEditText().getText().toString().trim();
+        txtUserName = findViewById(R.id.edtAdminname);
         back = findViewById(R.id.loginadminback);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,14 +51,17 @@ public class LoginAdmin extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!checkAdmin(Username,Password))
+                if(checkAdmin(txtUserName.getEditText().getText().toString(),txtPass.getEditText().getText().toString()))
                 {
-                    Toast.makeText(LoginAdmin.this,"Wronggggg",Toast.LENGTH_LONG).show();
-                    return;
-                }
-                else {
                     Intent intent = new Intent(LoginAdmin.this,Admin.class);
                     startActivity(intent);
+
+                }
+                else {
+                    System.out.println("Encrypted: " + txtUserName.getEditText().getText().toString());
+                    System.out.println("Encrypted: " + txtPass.getEditText().getText().toString());
+                    Toast.makeText(LoginAdmin.this,"Wronggggg",Toast.LENGTH_LONG).show();
+                    return;
                 }
             }
         });
@@ -68,11 +70,13 @@ public class LoginAdmin extends AppCompatActivity {
     public boolean checkAdmin(String a, String b){
         if(a.equals("admin"))
         {
-            if(!b.equals("admin"))
+            if(b.equals("admin"))
+                return true;
+            else
                 return false;
-            else return true;
+
         }
-        return true;
+        return false;
 
     }
 }

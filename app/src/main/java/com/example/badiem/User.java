@@ -10,6 +10,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.badiem.HelperClass.HomeAdapter.HistoryHelpersClass;
 import com.google.android.material.textfield.TextInputLayout;
@@ -96,7 +97,17 @@ public class User extends AppCompatActivity {
                                     ActionName = "Dang Nhap";
                                     HistoryHelpersClass historyHelpersClass = new HistoryHelpersClass(usernameEntered,ActionName,DateTime);
                                     //// TODO doan nay` xai bien cuc bo duoc khong, khong biet cai root luu ntn?
-                                    getAuth.push().setValue(historyHelpersClass);
+                                    checkSwitch check = checkSwitch.getReference();
+                                    if(check.getCheck()==1)
+                                    {
+                                        getAuth.push().setValue(historyHelpersClass);
+                                    }
+
+                                    else
+                                    {
+                                        Toast.makeText(User.this,"Login !",Toast.LENGTH_LONG).show();
+                                    }
+
 
                                     //start menu
                                     Intent intentmenu = new Intent(User.this,Menu.class);

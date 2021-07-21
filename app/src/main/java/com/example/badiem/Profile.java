@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.badiem.HelperClass.HomeAdapter.HistoryHelpersClass;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
@@ -23,6 +24,9 @@ import com.google.firebase.database.ValueEventListener;
 
 import org.w3c.dom.Text;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 public class Profile extends AppCompatActivity {
@@ -31,6 +35,8 @@ public class Profile extends AppCompatActivity {
     TextView name;
     TextInputLayout passcu,newpass,confirm;
     String userDB,passDB,encryptPassCu;
+    String DateTime,ActionName,username;
+    DatabaseReference getAuth;
     Hash hash = new Hash();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +81,24 @@ public class Profile extends AppCompatActivity {
                         reference.child(userDB).updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
                             @Override
                             public void onSuccess(Object o) {
-                                Toast.makeText(getApplicationContext(),"Update Success",Toast.LENGTH_LONG).show();
+                                Date date = new Date();
+
+                                DateFormat df = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+
+                                DateTime  = df.format(date);
+                                ActionName = "Change Password";
+                                HistoryHelpersClass historyHelpersClass = new HistoryHelpersClass(username,ActionName,DateTime);
+                                checkSwitch check = checkSwitch.getReference();
+                                if(check.getCheck()==1)
+                                {
+                                    getAuth.push().setValue(historyHelpersClass);
+                                }
+
+                                else {
+                                    //Toast.makeText(Menu.this,"Log out !",Toast.LENGTH_LONG).show();
+
+                                    Toast.makeText(getApplicationContext(), "Update Success", Toast.LENGTH_LONG).show();
+                                }
                             }
                         });
                     }
