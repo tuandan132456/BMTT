@@ -24,7 +24,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class CreateAccount extends AppCompatActivity {
-    Hash hash = new Hash();
+    EncryptAndHash encryptAndHash = new EncryptAndHash();
 
     Button btnCreate;
     TextInputLayout fullname,username,phone,pass,confirmpass;
@@ -101,7 +101,7 @@ public class CreateAccount extends AppCompatActivity {
         FullName = fullname.getEditText().getText().toString().trim();
         UserName = username.getEditText().getText().toString().trim();
         PhoneNo = phone.getEditText().getText().toString().trim();
-        PassWord = hash.getSHA512(pass.getEditText().getText().toString().trim());
+        PassWord = encryptAndHash.Encrypter(pass.getEditText().getText().toString().trim());
         Date date = new Date();
 
 

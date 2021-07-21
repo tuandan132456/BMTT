@@ -1,6 +1,5 @@
 package com.example.badiem;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,27 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-import java.util.Objects;
 
 public class LoginAdmin extends AppCompatActivity {
 
     DatabaseReference mData;
     ImageView back;
     Button btnLogin;
-   TextInputLayout txtPass, txtUserName;
-    Hash hash = new Hash();
-    String Username,Password;
+    TextInputLayout txtPass, txtUserName;
+    EncryptAndHash encryptAndHash = new EncryptAndHash();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +32,11 @@ public class LoginAdmin extends AppCompatActivity {
         mData = FirebaseDatabase.getInstance().getReference();
 
         btnLogin = findViewById(R.id.btnLogin);
-        txtPass = findViewById(R.id.edtAdminPass);
+
         txtUserName = findViewById(R.id.edtAdminname);
+
+        txtPass = findViewById(R.id.edtAdminPass);
+
         back = findViewById(R.id.loginadminback);
         back.setOnClickListener(new View.OnClickListener() {
             @Override

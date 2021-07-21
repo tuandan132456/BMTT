@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -29,7 +28,7 @@ public class User extends AppCompatActivity {
 
     Button btnLogin;
     TextInputLayout edtUsername,edtPassword;
-    Hash hash = new Hash();
+    EncryptAndHash encryptAndHash = new EncryptAndHash();
     String encryptedStr,DateTime,ActionName ;
     DatabaseReference getAuth;
     ImageView back;
@@ -57,6 +56,9 @@ public class User extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                
+
+                
                 //// TODO: 17/07/2021 So sánh
 
                 if (!validate()) {
@@ -67,6 +69,10 @@ public class User extends AppCompatActivity {
 
                     final String usernameEntered = edtUsername.getEditText().getText().toString();
                     final String passwordEntered = edtPassword.getEditText().getText().toString();
+
+                    System.out.println("---------------edtUsername--" + usernameEntered);
+                    System.out.println("---------------edtPassword--" + passwordEntered);
+
 
                     DatabaseReference reference = FirebaseDatabase.getInstance().getReference("User");
                     Query checkUser = reference.orderByChild("username").equalTo(usernameEntered);
@@ -82,10 +88,10 @@ public class User extends AppCompatActivity {
                                 String passDB = snapshot.child(usernameEntered).child("password").getValue(String.class);
                                 // check pass(User)
                                 // Successsssssssss
-                                encryptedStr = hash.getSHA512(passwordEntered);
+                                encryptedStr = encryptAndHash.Encrypter(passwordEntered);
                                 if (passDB.equals(encryptedStr)) {
                                     System.out.println("Encrypted: " + encryptedStr);
-                                    System.out.println("Check: " + hash.getSHA512(passwordEntered));
+                                    System.out.println("Check: " + encryptAndHash.Encrypter(passwordEntered));
                                     edtUsername.setError(null);
                                     edtUsername.setErrorEnabled(false);
                                     String usernameDB = snapshot.child(usernameEntered).child("username").getValue(String.class);

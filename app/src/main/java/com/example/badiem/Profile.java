@@ -1,6 +1,5 @@
 package com.example.badiem;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,14 +14,8 @@ import android.widget.Toast;
 import com.example.badiem.HelperClass.HomeAdapter.HistoryHelpersClass;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.textfield.TextInputLayout;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
-import com.google.firebase.database.ValueEventListener;
-
-import org.w3c.dom.Text;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -34,9 +27,11 @@ public class Profile extends AppCompatActivity {
     ImageView back;
     TextView name;
     TextInputLayout passcu,newpass,confirm;
+
     String userDB,passDB,encryptPassCu,DateTime,ActionName,username;
     DatabaseReference getAuth;
-    Hash hash = new Hash();
+    EncryptAndHash encryptAndHash = new EncryptAndHash();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,9 +66,9 @@ public class Profile extends AppCompatActivity {
                     //// TODO: Check User exist and login
 
                     String passwordEntered = passcu.getEditText().getText().toString();
-                    encryptPassCu = hash.getSHA512(passwordEntered);
+                    encryptPassCu = encryptAndHash.Encrypter(passwordEntered);
                     String passNew = newpass.getEditText().getText().toString().trim();
-                    String mahoaPassNew = hash.getSHA512(passNew);
+                    String mahoaPassNew = encryptAndHash.Encrypter(passNew);
                     HashMap hashMap = new HashMap();
                     hashMap.put("password",mahoaPassNew);
                     DatabaseReference reference = FirebaseDatabase.getInstance().getReference("User");

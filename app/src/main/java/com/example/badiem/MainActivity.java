@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
+
+        btnTest = findViewById(R.id.btnTest);
         btnAdminScreen = findViewById(R.id.btnAdminScreen);
         btnAdminScreen.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent user = new Intent(MainActivity.this,User.class);
                 startActivity(user);
+            }
+        });
+        btnTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainActivity.this,Test.class);
+                startActivity(it);
             }
         });
     }
