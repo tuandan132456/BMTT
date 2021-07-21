@@ -10,6 +10,7 @@
     android:background="#CCE1F3">
 
     <ImageView
+        android:id="@+id/userback"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/backk"
@@ -58,7 +59,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtUsername"/>
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -80,14 +81,14 @@
             app:boxStrokeWidth="2dp"
             app:endIconTint="#000000"
             app:hintTextColor="#000000"
-            app:passwordToggleEnabled="true"
-            app:startIconTint="#000000">
+            app:startIconTint="#000000"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:id="@+id/txtPassword"/>
+               />
         </com.google.android.material.textfield.TextInputLayout>
 
 

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:stretchColumns="*">
+<TableRow
+    android:background="#CCE1F3">
+    <TextView
+        android:text="Tên hoạt động"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TableRow>
+        <TextView
+            android:text="Date time"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </TableRow>
+</TableRow>
+    <TableRow
+        android:background="#fff">
+        <TextView
+            android:text="Đăng nhập" />
+        <TableRow>
+            <TextView
+                android:text="10h12"
+                android:gravity="center"/>
+        </TableRow>
+    </TableRow>
+    <TableRow
+        android:background="#fff">
+        <TextView
+            android:text="Vượt qua mission1" />
+        <TableRow>
+            <TextView
+                android:text="11h00"
+                android:gravity="center"/>
+        </TableRow>
+    </TableRow>
+    <TableRow
+        android:background="#fff">
+        <TextView
+            android:text="Vượt qua mission2" />
+        <TableRow>
+            <TextView
+                android:text="11h15"
+                android:gravity="center"/>
+        </TableRow>
+    </TableRow>
+    <TableRow
+        android:background="#fff">
+        <TextView
+            android:text="......" />
+        <TableRow>
+            <TextView
+                android:text=""
+                android:gravity="center"/>
+        </TableRow>
+    </TableRow>
+    <TableRow
+        android:background="#fff">
+        <TextView
+            android:text="Đăng xuất" />
+        <TableRow>
+            <TextView
+                android:text="14h03"
+                android:gravity="center"/>
+        </TableRow>
+    </TableRow>
+
+</TableLayout>

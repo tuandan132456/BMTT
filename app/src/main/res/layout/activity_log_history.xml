@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListUser"
+    tools:context=".ActiShowList"
     android:padding="10dp"
     android:background="#CCE1F3">
 
 
     <ImageView
-        android:id="@+id/useerback"
+        android:id="@+id/historyback"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_centerVertical="true"
@@ -18,8 +18,17 @@
         tools:ignore="MissingConstraints"
         android:layout_marginTop="5dp"/>
 
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bacham"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="353dp"
+        tools:layout_editor_absoluteY="-3dp" />
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/featred_recyclerrr"
+        android:id="@+id/history_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#CCE1F3"

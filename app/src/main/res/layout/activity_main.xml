@@ -11,22 +11,22 @@
 
     <TextView
         android:id="@+id/logoName"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
         android:fontFamily="@font/bungee"
         android:text="Hello there!!"
         android:textColor="#fff"
-        android:textSize="40sp"
-        android:transitionName="logo_text"
-        android:layout_gravity="center"
-        android:layout_marginTop="65dp"/>
+        android:textSize="60sp"
+        android:transitionName="logo_text" />
 
     <Button
 
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/cuttombutton"
         android:text="Admin"
         android:id="@+id/btnAdminScreen"
@@ -49,11 +49,5 @@
         android:textStyle="bold"
         app:backgroundTint="#fff"
         android:fontFamily="@font/bungee" />
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Test"
-    android:layout_gravity="center"
-    android:layout_marginTop="30dp"
-    android:id="@+id/btnTest"/>
+
 </LinearLayout>

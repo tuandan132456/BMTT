@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mission1"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mission 2"
+            android:fontFamily="@font/bungee"
+            android:textSize="45dp"
+            android:layout_gravity="center"
+            android:textColor="#a1c9f1"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="0dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/noidungcauhoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp"
+                android:text="AFC Asian Cup 2011 được tổ chức tại quốc gia nào?"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/cuttom"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/socauhoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Qestion 1"
+                android:fontFamily="@font/bentham"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/cuttum1"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+        <RadioGroup
+            android:id="@+id/radiogroup2.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RadioButton
+
+            android:id="@+id/cau2.1A"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cuttum1"
+            android:gravity="center"
+            android:paddingStart="-25dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="A. Qatar"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingLeft="-25dp" />
+        <RadioButton
+
+            android:id="@+id/cau2.1B"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="-25dp"
+            android:paddingTop="15dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:text="B. Hàn Quốc"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:background="@drawable/cuttum1"
+            android:layout_marginTop="-51dp"
+            android:layout_gravity="right"
+            android:paddingLeft="-25dp" />
+        <RadioButton
+
+            android:id="@+id/cau2.1C"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingStart="-25dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:text="C. Nhật Bản"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:background="@drawable/cuttum1"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="-20dp" />
+        <RadioButton
+
+            android:id="@+id/cau2.1D"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="-25dp"
+            android:paddingTop="15dp"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:text="D. Iraq"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:background="@drawable/cuttum1"
+            android:layout_marginTop="-50dp"
+            android:layout_gravity="right"
+            android:paddingLeft="-25dp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="40dp"
+                    android:paddingBottom="40dp"
+                    android:text="Đội nào lên ngôi vô địch AFC Asian Cup 2011 tổ chức tại Qatar?"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:background="@drawable/cuttom"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Qestion 2"
+                    android:fontFamily="@font/bentham"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cuttum1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radiogroup2.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/cau2.2A"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="A. Nhật Bản"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:id="@+id/cau2.2B"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="B. Australia"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-51dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:id="@+id/cau2.2C"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="C. Hàn Quốc"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:id="@+id/cau2.2D"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="D. Uzbekistan"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="40dp"
+                    android:paddingBottom="40dp"
+                    android:text="Ai là nhạc sĩ Việt Nam đầu tiên viết opera với tác phẩm “Cô sao” và sau đó là “Người tạc tượng”?"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:background="@drawable/cuttom"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Qestion 3"
+                    android:fontFamily="@font/bentham"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cuttum1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radiogroup2.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/cau2.3A"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="A. Đỗ Nhuận"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:id="@+id/cau2.3B"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="B. Hoàng Vân"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-51dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:id="@+id/cau2.3C"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="C. Trần Hoàn"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:id="@+id/cau2.3D"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="D. Trọng Đài"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="40dp"
+                    android:paddingBottom="40dp"
+                    android:text="Sông Bến Hải và sông Thạch Hãn nằm ở tỉnh nào?"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:background="@drawable/cuttom"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Qestion 4"
+                    android:fontFamily="@font/bentham"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cuttum1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radiogroup2.4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/cau2.4A"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="A. Quảng Bình"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:id="@+id/cau2.4B"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="B. Quảng Ninh"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-51dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:id="@+id/cau2.4C"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="C. Quảng Trị"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:id="@+id/cau2.4D"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="D. Quảng Ngãi"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="40dp"
+                    android:paddingBottom="40dp"
+                    android:text="Trong các cây cầu sau, cầu nào là cầu xoay?"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:background="@drawable/cuttom"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Qestion 5"
+                    android:fontFamily="@font/bentham"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cuttum1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radiogroup2.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/cau2.5A"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="A. Cầu Thanh Trì"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:id="@+id/cau2.5B"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="B. Cầu Thị Nại"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-51dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:id="@+id/cau2.5C"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="C. Cầu Sông Hàn"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="-25dp" />
+            <RadioButton
+                android:id="@+id/cau2.5D"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="-25dp"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="D. Cầu Cần Thơ"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:background="@drawable/cuttum1"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="right"
+                android:paddingLeft="-25dp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/submit2"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/cuttum1"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:backgroundTint="#a1c9f1"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

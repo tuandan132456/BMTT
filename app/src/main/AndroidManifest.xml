@@ -9,13 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BaDiem">
-        <activity android:name=".LoginAdmin"></activity>
+        <activity android:name=".Log_history"></activity>
+        <activity android:name=".showlist" />
+        <activity android:name=".ActiShowList" />
+        <activity android:name=".Mission5" />
+        <activity android:name=".Mission4" />
+        <activity android:name=".Mission3" />
+        <activity android:name=".Mission1" />
+        <activity android:name=".Mission2" />
+        <activity android:name=".M1" />
+        <activity android:name=".Menu" />
+        <activity android:name=".LoginAdmin" />
         <activity android:name=".CreateAccount" />
         <activity android:name=".Test" />
         <activity android:name=".Profile" />
         <activity android:name=".User" />
         <activity android:name=".Show" />
-        <activity android:name=".List" />
+        <activity android:name=".ListUser" />
         <activity android:name=".Admin" />
         <activity android:name=".MainActivity">
             <intent-filter>
