@@ -6,10 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,63 +24,55 @@ import java.util.Objects;
 public class LoginAdmin extends AppCompatActivity {
 
     DatabaseReference mData;
-    
+    ImageView back;
     private Button btnLogin;
-    private EditText txtPass, txtUserName;
+    private TextInputLayout txtPass, txtUserName;
     Hash hash = new Hash();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_login_admin);
 
         mData = FirebaseDatabase.getInstance().getReference();
 
-        mapping();
-
-
+        btnLogin = findViewById(R.id.btnLogin);
+        txtPass = findViewById(R.id.edtAdminPass);
+        txtUserName = findViewById(R.id.edtAdminPass);
+        String Username = txtUserName.getEditText().getText().toString().trim();
+        String Password = txtPass.getEditText().getText().toString().trim();
+        back = findViewById(R.id.loginadminback);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                // TODO: 17/07/2021 đẩy lên db để so sánh - Vẫn chưa đc :v
-                //String encrypted = Encrypt(UserName-Password)
-
-                String encryptedStr = hash.getSHA512(txtPass.getText().toString());
-                String userName = txtUserName.getText().toString();
-                System.out.println(userName);
-                System.out.println(encryptedStr);
-                mData.child("User").child("Phong").addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if(Objects.requireNonNull(snapshot.getKey()).equals("password")){
-                            if(Objects.requireNonNull(snapshot.getValue()).toString().equals(encryptedStr)){
-
-                                Toast.makeText(LoginAdmin.this, "Success", Toast.LENGTH_SHORT).show();
-
-
-                            }
-
-                            else
-                                Toast.makeText(LoginAdmin.this, "K dung pass", Toast.LENGTH_SHORT).show();
-                        }else{
-                            Toast.makeText(LoginAdmin.this, "Khong dung username", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError error) {
-                    }
-                });
-
-                Intent it = new Intent(LoginAdmin.this, Admin.class);
-                startActivity(it);
+                if(!checkAdmin(Username,Password))
+                {
+                    Toast.makeText(LoginAdmin.this,"Wronggggg",Toast.LENGTH_LONG).show();
+                    return;
+                }
+                else {
+                    Intent intent = new Intent(LoginAdmin.this,Admin.class);
+                    startActivity(intent);
+                }
             }
         });
     }
 
-    private void mapping() {
-        btnLogin = findViewById(R.id.btnLogin);
-        txtPass = findViewById(R.id.txtPassword);
-        txtUserName = findViewById(R.id.txtUsername);
+    public boolean checkAdmin(String a, String b){
+        if(a.equals("admin"))
+        {
+            if(!b.equals("admin"))
+                return false;
+            else return true;
+        }
+        return true;
+
     }
 }
